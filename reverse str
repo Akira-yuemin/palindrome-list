@@ -1,0 +1,13 @@
+https://blog.csdn.net/HARDBIRD123/article/details/82261651
+
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        l=str(x)
+        return l[::-1]
+    
+sol = Solution()
+sol.isPalindrome(45681)
+
+
+****************************
+'18654'
