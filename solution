@@ -1,0 +1,21 @@
+import numpy as np
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        x = str(x)  # Convert integer to string
+        txt = list(x)  # Convert string to list
+        print(type(txt))
+        lent = len(txt)
+        for i in range(int(lent/2)):  # Iterate only up to half the length
+            if txt[i] == txt[lent-i-1]:  # Compare characters from start and end
+                dir = True
+            else:
+                dir = False
+        print(dir)
+
+x = 121
+sol = Solution()  # Create an instance of the Solution class
+sol.isPalindrome(x)  # Call the isPalindrome method on the instance
+
+
+**********************************************************************************************
+output = True
